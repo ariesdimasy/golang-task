@@ -1,10 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
-
-func vocalKonsonan(input string) string {
+func VocalKonsonan(input string) string {
 	var res string = "konsonan"
 
 	var vocal string = "aiueoAIUEO"
@@ -17,16 +13,4 @@ func vocalKonsonan(input string) string {
 	}
 
 	return res
-}
-
-func main() {
-
-	fmt.Print("Masukkan satu huruf : ")
-
-	var input string
-
-	fmt.Scanf("%s", &input)
-
-	fmt.Println(vocalKonsonan(input))
-
 }

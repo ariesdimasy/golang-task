@@ -1,10 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
-
-func isPalindrome(input string) bool {
+func IsPalindrome(input string) bool {
 	var res string = ""
 
 	for i := len(input) - 1; i >= 0; i-- {
@@ -16,16 +12,4 @@ func isPalindrome(input string) bool {
 	} else {
 		return false
 	}
-}
-
-func main() {
-
-	fmt.Print("Masukkan satu kata : ")
-
-	var input string
-
-	fmt.Scanf("%s", &input)
-
-	fmt.Println((input))
-
 }
